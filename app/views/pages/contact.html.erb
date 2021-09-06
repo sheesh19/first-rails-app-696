@@ -1,0 +1,17 @@
+<h1>Contact Us</h1>
+
+
+<%# staff_members = ['Ed', 'Sy', 'Yair', 'Sheila', 'Will'] %>
+
+<%# <ol>
+    <li>Ed</li>
+    <li>Sy</li>
+    <li>Yair</li>
+    <li>Sheila</li>
+</ol> %>
+
+<ol>
+    <% @staff_members.each do |staff| %>
+        <li><%= staff %></li>
+    <% end %>
+</ol>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstRailsApp696</title>
+    <title>Istanbul696</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,24 @@
   </head>
 
   <body>
+
+    <%# <a href="ANCHOR_URL">URL_NAME</a>
+    <%= link_to "URL_NAME", ANCHOR_URL %>
+
+    <div>
+      <%= link_to "Home", root_path %>
+
+      <%= link_to "About Us", about_path %>
+
+      <%= link_to "Contact Us", contact_path %>
+
+      <form action="/contact" method="get">
+          <input type="text" name="member" value="<%= params[:member] %>">
+          <input type="submit">
+      </form>
+
+    </div>
+
     <%= yield %>
   </body>
 </html>
